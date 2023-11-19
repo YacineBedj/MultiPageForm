@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Multi-step form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <aside>
+          <div class="step-card card-1 ">
+            <div class="circle current">1</div>
+            <div class="title">
+              <p>step 1</p>
+              <h4>Your info</h4>
+            </div>
+          </div>
+          <div class="step-card card-2">
+            <div class="circle">2</div>
+            <div class="title">
+              <p>step 2</p>
+              <h4>Select plan</h4>
+            </div>
+          </div>
+          <div class="step-card card-3">
+            <div class="circle">3</div>
+            <div class="title">
+              <p>step 3</p>
+              <h4>Add-ons</h4>
+            </div>
+          </div>
+          <div class="step-card card-4">
+            <div class="circle">4</div>
+            <div class="title">
+              <p>step4</p>
+              <h4>Summary</h4>
+            </div>
+          </div>
+        </aside>
+          <form action="">
+            <!-- start 1st step  -->
+            <div class="step step-1">
+              <div class="text">
+                <h1>Personal info</h1>
+                <p>
+                  Please provide your name, email address, and phone number.
+                </p>
+              </div>
+              <div class="input">
+                <label for="name" >Name</label>
+                <input type="text"  placeholder="e.g yacine bedjaoui" name="username" id="name" />
+              </div>
+              <div class="input">
+                <label for="gmail">Gmail</label>
+                <input type="gamil"  placeholder="yacinebedjaoui@gmail.com" name=usergmail" id="gmail" />
+              </div>
+              <div class="input">
+                <label for="phone" >Phone</label>
+                <input type="number" placeholder="+21358972155"  name="userphone" id="phone" />
+              </div>
+              <div class="btns">
+                <button class="next">Next step</button>
+              </div>
+            </div>
+            
+            <!-- start 2ed step  -->
+            <div class="step step-2">
+              <div class="text">
+                <h1>Select your plan</h1>
+                <p>
+                  Select your plan You have the option of monthly or yearly billing
+                </p>
+              </div>
+              <div class="select-plan">
+                <div class="plan">
+                  <label for="arcade" class="selected"> 
+                    <img src="assets/images/icon-arcade.svg" alt="">
+                    <div>
+                      <h3>Arcade</h3>
+                      <p>$ <span>9 / mo</span></p>
+                    </div>
+                  </label>
+                  <input type="radio" name="plan" id="arcade" value="9">
+                </div>
+                <div class="plan">
+                  <label for="advanced"> 
+                    <img src="assets/images/icon-advanced.svg" alt="">
+                    <div>
+                      <h3>advanced</h3>
+                      <p>$ <span>12 / mo</span></p>
+                    </div>
+                  </label>
+                  <input type="radio" name="plan" id="advanced" value="12" checked="checked">
+                </div>
+                <div class="plan">
+                  <label for="pro"> 
+                    <img src="assets/images/icon-pro.svg" alt="">
+                    <div>
+                      <h3>pro</h3>
+                      <p>$ <span>15 / mo</span>></p>
+                    </div>
+                  </label>
+                  <input type="radio" name="plan" id="pro" value="15">
+                </div>
+              </div>
+              <div class="toggel">
+                <span class="selected">monthly</span>
+                <label for="toggel">
+                  <input type="checkbox" id="toggel">
+                  <span class="slider"></span>
+                </label>
+                <span>Yearly</span>
+              </div>
+              <div class="btns">
+                <button class="next">Next step</button>
+                <button class="back">go Back</button>
+              </div>
+            </div>
+            <!-- start step 3  -->
+            <div class="step step-3">
+              <div class="text">
+                <h1>Select your plan</h1>
+                <p>
+                  Select your plan You have the option of monthly or yearly billing
+                </p>
+              </div>
+              <div class="service">
+                <label for="onlineService">
+                  <input type="checkbox" value="1" id="onlineService" name="service">
+                  <div class="text">
+                    <h3>Online service</h3>
+                    <p>acces to multiplayer games</p>
+                  </div>
+                  <p class="price">+$1/mo</p>
+                </label>
+                <label for="storage" >
+                  <input type="checkbox" value="2" id="storage" name="service" >
+                  <div class="text">
+                    <h3>Online service</h3>
+                    <p>Extra 1TB of cloud save</p>
+                  </div>
+                  <p class="price">+$1/mo</p>
+                </label>
+                <label for="profile">
+                  <input type="checkbox" value="2" id="profile" name="service" >
+                  <div class="text">
+                    <h3>Customizable Profile</h3>
+                    <p>Extra 1TB of cloud save</p>
+                  </div>
+                  <p class="price">+$2/mo</p>
+                </label>
+              </div>
+              <div class="btns">
+                <button class="next">Next step</button>
+                <button class="back">go Back</button>
+              </div>
+            </div>
+            <!-- start step 4  -->
+            <div class="step step-4">
+              <div class="text">
+                <h1>Select your plan</h1>
+                <p>
+                  Select your plan You have the option of monthly or yearly billing
+                </p>
+              </div>
+              <div class="summary">
+                <div class="service">
+                  <p>Name</p>
+                  <span>$9/mo</span>
+                </div>
+                <div class="service">
+                  <p>Online service</p>
+                  <span>+$1/mo</span>
+                </div>
+                <div class="service">
+                  <p>Profile-contmosation</p>
+                  <span>$2/mo</span>
+                </div>
+                <div class="service">
+                  <p>Larger storage</p>
+                  <span>$2/mo</span>
+                </div>
+              </div>
+              <div class="total">
+                <p>Total (pre month)</p>
+                <span> $14/mo </span>
+              </div>
+              <div class="btns">
+                <button class="submit">Submit</button>
+                <button class="back">go Back</button>
+              </div>
+            </div>
+          </form>
+      </main>
+    </div>
+
+
+    <!-- Step 5 end -->
+    <script src="index.js"></script>
+  </body>
+</html>

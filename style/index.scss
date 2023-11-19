@@ -1,0 +1,37 @@
+//import the variable used
+@use "variable/colors";
+@use "variable/font";
+//start the main
+@use "pages/main";
+//sidbar
+@use 'pages/sidebar';
+//steps
+@use "pages/step1";
+//start the body rules
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: colors.$Magnolia;
+    font-family: font.$main-font;
+}
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: colors.$Magnolia;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+    position: relative;
+    @media(max-width: 783px){
+        &{
+            height: calc(100vh + 200px);
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+main{
+    background-color: white;
+    width: 900px;
+    min-height: 600px;
+    border: 1px solid rgb(189, 188, 188);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+}
+@media(max-width:782px){
+    main{
+        flex-direction: column;
+        width: 375px;
+        // height: fit-content;
+        background-color: white;
+        border: none;
+    }
+}
